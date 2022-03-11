@@ -1,13 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include <ctype.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 
+/**
+ * main - Prints the alphabetic in lower and upper case
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
 	char alphabet;
@@ -16,12 +13,13 @@ int main(void)
 	{
 		putchar(alphabet);
 	}
+
 	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
-        {
-                putchar(alphabet);
-        }
+	{
+		putchar(alphabet);
+	}
 
 	putchar('\n');
-	return (0);
 
+	return (0);
 }
