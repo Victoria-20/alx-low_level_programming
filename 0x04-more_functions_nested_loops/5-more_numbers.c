@@ -5,19 +5,22 @@
 *
 * Return: 0 if successful
 */
+
 void more_numbers(void)
 {
-	int i = 0;
-	char j;
+	char i;
+	int counter;
 
-	while (i < 10)
+	for (counter = 1; counter <= 10; counter++)
 	{
-		for (j = '0'; j < '9'; j++)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar(j);
+			if (i / 10 > 0)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
-		i++;
 	}
-
 }
+
+
