@@ -1,14 +1,25 @@
 #include "main.h"
-#include <string.h>
-
 /**
- * print_rev - updates the value of variable n using pointers
- * @s: int variable to be swapped
- * Return: Always 0
+ *_strcpy - copies the string pointed to by src
+ *@dest: A pointer to a char that will be changed
+ *@src: A pointer to a char that will be changed
+ *Return: dest
  */
 
-void print_rev(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	_putchar(strrev(*s));
-	_putchar('\n');
+
+int i;
+
+i = 0;
+
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+
+return (dest);
+
 }

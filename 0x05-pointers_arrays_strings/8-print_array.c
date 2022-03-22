@@ -1,14 +1,30 @@
 #include "main.h"
-#include <string.h>
-
+#include <stdio.h>
 /**
- * print_rev - updates the value of variable n using pointers
- * @s: int variable to be swapped
- * Return: Always 0
+ *print_array - prints n elements of an array of integers
+ *@a: A pointer to an int that will be updated/ changed
+ *@n: return value n
+ *Return: void which ,means our answer is correct
  */
 
-void print_rev(char *s)
+void print_array(int *a, int n)
+
 {
-	_putchar(strrev(*s));
-	_putchar('\n');
+int i;
+
+i = 0;
+while (i < n)
+{
+printf("%d", a[i]);
+
+if (i < n - 1)
+{
+printf(", ");
+}
+
+i++;
+}
+
+printf("\n")
+;
 }
