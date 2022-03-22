@@ -2,13 +2,20 @@
 #include <string.h>
 
 /**
- * print_rev - updates the value of variable n using pointers
- * @s: int variable to be swapped
+ * puts2 - updates the value of variable n using pointers
+ * @str: int variable to be swapped
  * Return: Always 0
  */
 
-void print_rev(char *s)
+void puts2(char *str)
 {
-	_putchar(strrev(*s));
+	while (*str != '\0')
+	{
+		if (*str % 2 == 0)
+		{
+			_putchar(*str);
+		}
+		str++;
+	}
 	_putchar('\n');
 }
