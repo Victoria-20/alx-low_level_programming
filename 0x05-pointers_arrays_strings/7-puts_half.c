@@ -1,9 +1,9 @@
 #include "main.h"
-#include <string.h>
+
 
 /**
  * puts_half - updates the value of variable n using pointers
- * @s: int variable to be swapped
+ * @str: int variable to be swapped
  * Return: Always 0
  */
 
