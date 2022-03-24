@@ -1,14 +1,29 @@
 #include "main.h"
-#include <string.h>
+
 
 /**
- * print_rev - updates the value of variable n using pointers
- * @s: int variable to be swapped
+ * puts_half - updates the value of variable n using pointers
+ * @str: int variable to be swapped
  * Return: Always 0
  */
 
-void print_rev(char *s)
+void puts_half(char *str)
 {
-	_putchar(strrev(*s));
-	_putchar('\n');
+	int i, last;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+	i++;
+	}
+
+	last = (i + 1) / 2;
+
+	for (i = last; str[i]; i++)
+	{
+	_putchar (str[i]);
+	}
+
+	_putchar ('\n');
+
 }
