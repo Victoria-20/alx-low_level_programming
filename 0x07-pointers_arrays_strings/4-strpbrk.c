@@ -1,13 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
-* _memset - fills memory with a constant byte
-* s:
-* b:
-* n:
+* _strpbrk - fills memory with a constant byte
+* @s: string to be searched
+* @accept: bytes
+* Return: pointer to the byte in s
 */
 
-char *_strstr(char *haystack, char *needle)
+char *_strpbrk(char *s, char *accept)
 {
-
+	char *res = strpbrk(s, accept);
+	return (res);
 }

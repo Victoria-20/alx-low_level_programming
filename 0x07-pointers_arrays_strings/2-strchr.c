@@ -1,13 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
-* _memset - fills memory with a constant byte
-* s:
-* b:
-* n:
+* _strchr - locates a charcter in a string
+* @s: string s
+* @c: character to be located
+* Return: pointer to the first occurrence of the character
 */
 
-char *_strstr(char *haystack, char *needle)
+char *_strchr(char *s, char c)
 {
+	/* using the strchr function*/
+	strchr(s, c);
+	return (c);
 
 }
