@@ -3,4 +3,4 @@
 ### Tasks
 
 #### 0.memset
-	Solution: [0-memset.c](0x07-pointers_arrays_strings/0-memset.c)
+	Solution: [0-memset.c](/0x07-pointers_arrays_strings/0-memset.c)
