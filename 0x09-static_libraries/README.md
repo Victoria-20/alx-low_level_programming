@@ -11,4 +11,4 @@ Just a recap, the 4-phases include;
 	3. Assembly
 	4. Linking
 
-	### 1. Create Object files
+### 1. Create Object files
