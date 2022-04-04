@@ -1,12 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * whatsmyname - program that prints its name
+ * main - program that prints number of arguments passed into it
  * @argc: counts number of arguments on the command line
  * @argv: array of pointer to the arguments passed(strings)
+ * Return: 0 if successfull
  */
 
-int whatsmyname(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
+	(void)argv;
+
+	printf("%d\n", argc - 1);
 	return (0);
 }
