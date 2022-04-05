@@ -34,7 +34,6 @@ char *_strdup(char *str)
 	{
 		/*copy string str to ptr*/
 		strcpy(ptr, str);
-		return (ptr);
 	}
-
+	return (ptr);
 }
