@@ -1,12 +1,40 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
- * create_array - creates an array of chars
- * @size: size of the array
- * @c: character c
+ * _strdup - return a pointer to a newly allocated space in memory
+ * @str: string
+ * Return: pointer to duplicate string
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
+	char *ptr;
+	int len;
+
+	/* Determine the length of the string*/
+	len = strlen(str);
+
+	/* Check for string */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	/* Allocate new memory */
+	ptr = malloc(len + 1);
+
+	/* if insufficient memory, return NULL*/
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		/*copy string str to ptr*/
+		strcpy(ptr, str);
+		return (ptr);
+	}
 
 }
