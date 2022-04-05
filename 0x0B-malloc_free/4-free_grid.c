@@ -1,12 +1,21 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * create_array - creates an array of chars
- * @size: size of the array
- * @c: character c
+ * free_grid - allocates a grid, make space and free space
+ * @grid: takes in width of grid
+ * @height: height of grid
+ * Return: free grid
  */
 
-char *create_array(unsigned int size, char c)
+void free_grid(int **grid, int height)
 {
+	int i;
 
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
+
+	free(grid);
 }
