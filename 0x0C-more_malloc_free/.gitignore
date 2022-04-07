@@ -1,4 +1,4 @@
 _putchar.c
-*.c
+*-main.c
 *.o
 ../*
