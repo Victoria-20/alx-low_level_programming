@@ -10,18 +10,13 @@ void *malloc_checked(unsigned int b)
 {
 	int *ptr;
 
-	/* check if size b = 0 */
-	if (b == 0)
-	{
-		return (NULL);
-	}
 	/* create new memory space */
 	ptr = malloc(b);
 
 	/* check if new memory has been allocated */
-	if (ptr == 0)
+	if (ptr == NULL)
 	{
-		return (NULL);
+		exit(98);
 	}
 	return (ptr);
 }
