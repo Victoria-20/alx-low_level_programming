@@ -26,6 +26,15 @@ Solution: [1-pi.h](1-pi.h)
 
 #### 2. File name
 Program that prints the name of the file it was compiled from
-``` printf("%s", __FILE__) ```
+```
+printf("%s", __FILE__)
+```
 Solution: [2-main.c](2-main.c)
 
+#### 3. Function-like macro
+Fuction-like macro ABS(x) that computes the absolute value of a number x
+
+Solution: [3-function_like_macro.h](3-function_like_macro.h)
+
+#### 4. SUM
+Solution: [4-sum.h](4-sum.h)
