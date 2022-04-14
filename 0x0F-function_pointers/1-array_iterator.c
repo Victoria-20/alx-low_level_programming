@@ -9,5 +9,13 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	unsigned int i;
 
+	if (array && action)
+	{
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
+	}
 }
