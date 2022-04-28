@@ -1,13 +1,25 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_listint - print all elements of a listint_t list
- * @h: pointer to the first node(head)
+ * free_listint2 - print all elements of a listint_t list
+ * @head: pointer to the first node(head)
  *
- * Return: number of nodes
+ * Return: void
  */
 
-size_t print_listint(const listint_t *h)
+void free_listint2(listint_t **head)
 {
+	listint_t *temp;
+	listint_t *curr;
 
+	if (head != NULL)
+	{
+		curr = *head;
+		while ((temp = curr) != NULL)
+		{
+			curr = curr->next;
+			free(temp);
+		}
+		*head = NULL;
+	}
 }
