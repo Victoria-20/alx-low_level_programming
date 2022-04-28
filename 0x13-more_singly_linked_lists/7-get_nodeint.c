@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- * print_listint - print all elements of a listint_t list
- * @h: pointer to the first node(head)
- *
- * Return: number of nodes
+ * get_nodeint_at_index - returns nth of a listint_t list
+ * @head: pointer to the first node(head)
+ * @index: index of the node
+ * Return: nth nodes
  */
 
-size_t print_listint(const listint_t *h)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
+	unsigned int i;
 
+	for (i = 0; i < index && head != NULL; i++)
+	{
+		head = head->next;
+	}
+
+	return (head);
 }
