@@ -1,13 +1,24 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_listint - print all elements of a listint_t list
- * @h: pointer to the first node(head)
+ * pop_listint - deletes tha head node of a listint_t linked list
+ * @head: pointer to the first node(head)
  *
- * Return: number of nodes
+ * Return: the heads data
  */
 
-size_t print_listint(const listint_t *h)
+int pop_listint(listint_t **head)
 {
+	listint_t *temp;
+	int num;
 
+	if (!head || !*head)
+		return (0);
+
+	num = (*head)->n;
+	temp = (*head)->next;
+	free(*head);
+	*head = temp;
+
+	return (num);
 }
