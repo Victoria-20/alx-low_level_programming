@@ -1,13 +1,22 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_listint - print all elements of a listint_t list
- * @h: pointer to the first node(head)
+ * sum_listint - return the sum of all the data of a listint_t list
+ * @head: pointer to the first node(head)
  *
- * Return: number of nodes
+ * Return: return sum of the data
  */
 
-size_t print_listint(const listint_t *h)
+int sum_listint(listint_t *head)
 {
+	int sum = 0;
+	listint_t *temp = head;
 
+	while (temp)
+	{
+	sum += temp->n;
+	temp = temp->next;
+	}
+
+	return (sum);
 }
