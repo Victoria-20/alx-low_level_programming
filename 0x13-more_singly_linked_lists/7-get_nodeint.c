@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * get_nodeint_at_index - returns nth of a listint_t list
