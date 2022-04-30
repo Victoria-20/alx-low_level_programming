@@ -1,11 +1,26 @@
 #include "main.h"
 
 /**
-* binary_to_uint - converts a binary number to an unsigned int
-* @b: pointer to string of characters
-* Return: converted number
+* get_bit - returns the value of a bit at a given index.
+* @n: unsigned long int
+* @index:is the index
+* Return: value of the bit
 */
 
-unsigned int binary_to_uint(const char *b)
+int get_bit(unsigned long int n, unsigned int index)
 {
+	unsigned int i;
+
+	if (n == 0 && index < 64)
+		return (0);
+
+	for (i = 0; i <= 63; n >>= 1, i++)
+	{
+		if (index == i)
+		{
+			return (n & 1);
+		}
+	}
+
+	return (-1);
 }
