@@ -7,26 +7,13 @@
 * Return: address of node
 */
 
-listint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *ptr;
-	unsigned int cpt = 0;
 
-	if (head == NULL)
-		return (NULL);
-
-	if (head->prev != NULL)
+	for (ptr = head; ptr != NULL && index != 0; index--)
 	{
-		while (head->prev != NULL)
-			head = head->prev;
-	}
-
-	ptr = head;
-	while ((index != cpt) && (ptr != NULL))
-	{
-		cpt++;
 		ptr = ptr->next;
-
 	}
 
 	return (ptr);
